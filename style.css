@@ -1,0 +1,408 @@
+body{
+font-family: 'Inter', Arial, sans-serif;
+background: linear-gradient(180deg,#0f0f0f,#1a1a1a);
+color:white;
+margin:0;
+}
+
+header{
+background: linear-gradient(180deg,#0d0d0d,#000000);
+text-align:center;
+padding:30px;
+border-bottom:1px solid #222;
+}
+
+header h1{
+font-family: 'Bebas Neue', sans-serif;
+font-size:48px;
+letter-spacing:2px;
+margin:10px 0 0 0;
+text-shadow:0 0 10px rgba(255,0,0,0.3);
+}
+
+nav{
+background: linear-gradient(90deg,#7a0000,#cc0000,#7a0000);
+text-align:center;
+padding:5px;
+}
+
+nav a{
+color:white;
+margin:0 20px;
+text-decoration:none;
+font-weight:bold;
+font-size:14px;
+padding-bottom:4px;
+border-bottom:2px solid transparent;
+transition:0.5s;
+}
+
+nav a:hover{
+border-bottom:2px solid white;
+
+}
+
+.container{
+padding:30px;
+}
+
+.post{
+background: linear-gradient(145deg,#1c1c1c,#262626);
+padding:25px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+
+.about{
+text-align:center;
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.about h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.programs{
+display:flex;
+gap:25px;
+justify-content:center;
+padding:60px 40px;
+flex-wrap:wrap;
+font-size:10px;
+
+background:
+linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+url("Imagens/luta.png");
+
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.program-card{
+background:rgba(20,20,20,0.85);
+backdrop-filter: blur(4px);
+padding:30px;
+border-radius:12px;
+width:260px;
+transition:0.3s;
+}
+
+.program-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.program-card h3{
+margin-top:0;
+color:#ff4040;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+
+max-width:700px;
+margin:60px auto;
+
+padding:40px;
+
+background:rgba(20,20,20,0.85);
+backdrop-filter: blur(4px);
+
+border-radius:12px;
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+flex-basis:100%;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:52px;
+color:#ff4040;
+margin:0;
+}
+
+.stat p{
+margin-top:6px;
+font-size:14px;
+opacity:0.7;
+}
+
+
+.schedule{
+padding:100px 20px;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+url("Imagens/luta.png");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+.schedule h2{
+font-family:'Bebas Neue', sans-serif;
+font-size:42px;
+letter-spacing:2px;
+margin-bottom:40px;
+}
+
+.schedule-table{
+display:grid;
+grid-template-columns:100px repeat(5,1fr);
+max-width:900px;
+margin:auto;
+
+background:rgba(20,20,20,0.45);
+backdrop-filter:blur(6px);
+-webkit-backdrop-filter:blur(6px);
+
+border-radius:12px;
+overflow:hidden;
+
+box-shadow:0 20px 60px rgba(0,0,0,0.7);
+border-top:1px solid rgba(255,255,255,0.05);
+}
+
+.schedule-header{
+background:#cc0000;
+padding:15px;
+font-weight:bold;
+}
+
+.time{
+background:#111;
+padding:15px;
+font-weight:bold;
+}
+
+.class{
+padding:15px;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.2s;
+}
+
+.class:hover{
+background:rgba(255,0,0,0.2);
+}
+
+
+.schedule-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.day{
+background:rgba(20,20,20,0.45);
+backdrop-filter:blur(6px);
+padding:20px;
+border-radius:12px;
+}
+
+.day h3{
+font-family:'Bebas Neue', sans-serif;
+font-size:26px;
+margin-bottom:15px;
+color:#ff4040;
+}
+
+.class-card{
+background:rgba(0,0,0,0.35);
+padding:12px;
+border-radius:8px;
+margin-bottom:10px;
+transition:0.25s;
+}
+
+.class-card span{
+font-weight:600;
+display:block;
+font-size:14px;
+}
+
+.class-card p{
+font-size:13px;
+opacity:0.8;
+margin:3px 0 0 0;
+}
+
+.class-card:hover{
+background:rgba(255,0,0,0.15);
+transform:translateX(5px);
+}
+
+
+
+.contact-footer{
+padding:100px 20px;
+text-align:center;
+
+background:linear-gradient(180deg,#0a0a0a,#000);
+border-top:1px solid rgba(255,255,255,0.05);
+}
+
+.contact-footer h2{
+font-family:'Bebas Neue', sans-serif;
+font-size:42px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.contact-sub{
+opacity:0.7;
+margin-bottom:50px;
+}
+
+.social-links{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.social-btn{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+
+padding:20px 30px;
+
+background:rgba(20,20,20,0.5);
+backdrop-filter:blur(6px);
+
+border-radius:12px;
+
+text-decoration:none;
+color:white;
+
+transition:0.3s;
+}
+
+.social-btn img{
+width:32px;
+height:32px;
+transition:0.3s;
+}
+
+.social-btn:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
+
+.social-btn.instagram:hover{
+background:linear-gradient(45deg,#833ab4,#fd1d1d,#fcb045);
+}
+
+.social-btn.tiktok:hover{
+background:#111;
+box-shadow:0 0 15px #25F4EE;
+}
+
+.social-btn.whatsapp:hover{
+background:#25D366;
+}
+
+.footer-bottom{
+margin-top:60px;
+font-size:13px;
+opacity:0.5;
+}
+
+.contact-footer h2{
+animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.ranking{
+padding:100px 20px;
+max-width:1100px;
+margin:auto;
+
+background:
+linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+url("Imagens/luta.png");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+.ranking h2{
+font-family:'Bebas Neue', sans-serif;
+font-size:42px;
+text-align:center;
+margin-bottom:50px;
+letter-spacing:2px;
+}
+
+.ranking-card{
+display:flex;
+align-items:center;
+gap:25px;
+
+background:rgba(20,20,20,0.45);
+backdrop-filter:blur(6px);
+
+padding:20px;
+margin-bottom:20px;
+
+border-radius:12px;
+
+transition:0.25s;
+}
+
+.ranking-card:hover{
+transform:translateX(6px);
+background:rgba(255,255,255,0.05);
+}
+
+.ranking-photo{
+width:90px;
+height:90px;
+
+object-fit:cover;
+
+border-radius:10px;
+}
+
+.ranking-info h3{
+margin:0;
+font-size:22px;
+}
+
+.medals{
+margin-top:8px;
+display:flex;
+gap:20px;
+font-size:14px;
+opacity:0.85;
+}
+
+.finish{
+opacity:0.7;
+}
